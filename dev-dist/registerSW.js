@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) navigator.serviceWorker.register('/preuba/dev-sw.js?dev-sw', { scope: '/preuba/', type: 'classic' })
