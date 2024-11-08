@@ -3,7 +3,7 @@ import React from "react";
 const Home: React.FC = () => {
   return (
     <div>
-      <h1>Home Page</h1>
+      <h1>Home Page Updated</h1>
       <p>Welcome to the home page!</p>
       <img
         style={{ width: "40vw" }}
