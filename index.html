@@ -15,8 +15,25 @@
     <meta http-equiv="pragma" content="no-cache" />
     <script type="module" crossorigin src="/preuba/assets/index-DX7ABPXd.js"></script>
     <link rel="stylesheet" crossorigin href="/preuba/assets/index-kQJbKSsj.css">
-  </head>
+  <link rel="manifest" href="/preuba/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/preuba/registerSW.js"></script></head>
   <body>
     <div id="root"></div>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker
+            .register("/sw.js")
+            .then((registration) => {
+              console.log(
+                "Service Worker registrado con éxito: ",
+                registration
+              );
+            })
+            .catch((error) => {
+              console.log("Error al registrar el Service Worker: ", error);
+            });
+        });
+      }
+    </script>
   </body>
 </html>
