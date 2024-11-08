@@ -21,7 +21,7 @@ export default defineConfig({
               cacheName: "assets-cache",
               expiration: {
                 maxEntries: 50,
-                maxAgeSeconds: 10 * 60,
+                maxAgeSeconds: 5 * 60,
               },
             },
           },
@@ -44,6 +44,9 @@ export default defineConfig({
             type: "image/png",
           },
         ],
+      },
+      injectManifest: {
+        swSrc: "sw.js",
       },
     }),
   ],
