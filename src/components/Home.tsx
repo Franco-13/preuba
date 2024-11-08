@@ -5,6 +5,11 @@ const Home: React.FC = () => {
     <div>
       <h1>Home Page</h1>
       <p>Welcome to the home page!</p>
+      <img
+        style={{ width: "40vw" }}
+        src="https://fastly.picsum.photos/id/0/5000/3333.jpg?hmac=_j6ghY5fCfSD6tvtcV74zXivkJSPIfR9B8w34XeQmvU"
+        alt="ls"
+      />
     </div>
   );
 };
