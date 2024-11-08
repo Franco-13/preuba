@@ -13,26 +13,10 @@
     />
     <meta http-equiv="expires" content="0" />
     <meta http-equiv="pragma" content="no-cache" />
+    <script src="/swregister.js"></script>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-    <script>
-      if ("serviceWorker" in navigator) {
-        window.addEventListener("load", () => {
-          navigator.serviceWorker
-            .register("/sw.js")
-            .then((registration) => {
-              console.log(
-                "Service Worker registrado con éxito: ",
-                registration
-              );
-            })
-            .catch((error) => {
-              console.log("Error al registrar el Service Worker: ", error);
-            });
-        });
-      }
-    </script>
   </body>
 </html>

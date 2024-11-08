@@ -45,9 +45,7 @@ export default defineConfig({
           },
         ],
       },
-      injectManifest: {
-        swSrc: "sw.js",
-      },
+      injectRegister: "auto",
     }),
   ],
   base: "/preuba/",
