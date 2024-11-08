@@ -3,7 +3,7 @@ import React from "react";
 const Images: React.FC = () => {
   return (
     <div>
-      <h1>Images Page</h1>
+      <h1>Página de imagen</h1>
       <p>This is the images page.</p>
       <img
         style={{ width: "40vw" }}
