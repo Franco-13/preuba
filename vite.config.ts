@@ -7,9 +7,9 @@ export default defineConfig({
   plugins: [
     react(),
     VitePWA({
-      registerType: "autoUpdate", // Registrará el service worker automáticamente
+      registerType: "autoUpdate",
       devOptions: {
-        enabled: true, // Habilita el service worker en modo de desarrollo
+        enabled: true,
       },
       workbox: {
         runtimeCaching: [
